@@ -43,6 +43,14 @@ En sortie: [
  */
 
 function getFoodCategories(foods) {
+  return foods.map(function(aliments) {
+    if (aliments.isVegetarian){
+      return aliments.food + ' is suitable for vegetarians';
+    }
+    else {
+      return aliments.food + ' is not suitable for vegetarians';
+    }
+  });
 }
 
 
